@@ -26,7 +26,7 @@ namespace BCItester
 
         private void TrueFalseQuestion_Load(object sender, EventArgs e)
         {
-            //loadQuestions();
+            loadQuestions();
 
             var showedQuestions = new List<int>();
             //var form = new TrueFalseQuestion();
@@ -98,9 +98,10 @@ namespace BCItester
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if(this.questions.Count == data.Count)
+            //loadQuestions();
+            if (this.questions.Count == 0)
             {
-                this.textBox1.Visible = false;
+                this.textBox1.Visible = true;
                 this.textBox1.Text = "No more questions available";
                 this.textBox1.ForeColor = Color.FromArgb(0, 0, 255);
             }
@@ -108,10 +109,11 @@ namespace BCItester
             {
                 this.label2.Visible = false;
                 this.textBox1.Visible = false;
-                loadQuestions();
+                
                 Random random = new Random();
-                int randomNumber = random.Next(0, data.Count);
+                int randomNumber = random.Next(0, questions.Count);
                 question = questions[randomNumber];
+                questions.RemoveAt(randomNumber);
                 if (question.QType == QuestionType.QType.TrueFalse)
                 {
                     this.radioButton1.Visible = true;
