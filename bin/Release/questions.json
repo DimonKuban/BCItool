@@ -1,0 +1,22 @@
+[
+  {
+    "QType": "TrueFalse",
+    "CorrectAnswer": true,
+    "QuestionText": "Why Manchester never wins champions league?"
+  },
+  {
+    "QType": "TrueFalse",
+    "CorrectAnswer": true,
+    "QuestionText": "when something happened"
+  },
+  {
+    "QType": "MissingWord",
+    "CorrectAnswer": "Zenit",
+    "QuestionText": "Best club"
+  },
+  {
+    "QType": "Multiple",
+    "CorrectAnswer": "Zenit",
+    "QuestionText": "Russian clubs (Zenit, Manchester, Borussia, Arsenal)"
+  }
+]

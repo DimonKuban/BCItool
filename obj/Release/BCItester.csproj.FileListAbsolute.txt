@@ -1,0 +1,12 @@
+C:\Users\dkoro\Desktop\BCItool\bin\Release\BCItester.exe.config
+C:\Users\dkoro\Desktop\BCItool\bin\Release\BCItester.exe
+C:\Users\dkoro\Desktop\BCItool\bin\Release\BCItester.pdb
+C:\Users\dkoro\Desktop\BCItool\bin\Release\Newtonsoft.Json.dll
+C:\Users\dkoro\Desktop\BCItool\bin\Release\Newtonsoft.Json.xml
+C:\Users\dkoro\Desktop\BCItool\obj\Release\BCItester.Form1.resources
+C:\Users\dkoro\Desktop\BCItool\obj\Release\BCItester.Properties.Resources.resources
+C:\Users\dkoro\Desktop\BCItool\obj\Release\BCItester.TrueFalseQuestion.resources
+C:\Users\dkoro\Desktop\BCItool\obj\Release\BCItester.csproj.GenerateResource.cache
+C:\Users\dkoro\Desktop\BCItool\obj\Release\BCItester.csproj.CopyComplete
+C:\Users\dkoro\Desktop\BCItool\obj\Release\BCItester.exe
+C:\Users\dkoro\Desktop\BCItool\obj\Release\BCItester.pdb
