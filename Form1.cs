@@ -39,8 +39,12 @@ namespace BCItester
             else{
                 // quiz
                 //var showedQuestions = new List<int>();
+                
+                this.Hide();
                 var form = new TrueFalseQuestion();
+                form.Closed += (s, args) => this.Close();
                 form.Show();
+
                 //Random random = new Random();
                 //int randomNumber = random.Next(0, data.Count);
                 //Question randomQuestion = questions[randomNumber];

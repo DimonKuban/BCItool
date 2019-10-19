@@ -93,12 +93,26 @@ namespace BCItester
                     this.textBox1.ForeColor = Color.FromArgb(255, 0, 0);
                 }
                 
+            } else if(this.question.QType == QuestionType.QType.MissingWord || this.question.QType == QuestionType.QType.Multiple)
+            {
+                if(this.question.CorrectAnswer.ToUpper() == this.textBox2.Text.Trim().ToUpper())
+                {
+                    this.textBox1.Text = "Correct";
+                    this.textBox1.ForeColor = Color.FromArgb(0, 255, 0);
+                }
+                else
+                {
+                    this.textBox1.Text = this.question.CorrectAnswer;
+                    this.textBox1.ForeColor = Color.FromArgb(255, 0, 0);
+                }
             }
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             //loadQuestions();
+            clearControl();
+
             if (this.questions.Count == 0)
             {
                 this.textBox1.Visible = true;
@@ -107,20 +121,40 @@ namespace BCItester
             }
             else
             {
-                this.label2.Visible = false;
-                this.textBox1.Visible = false;
                 
                 Random random = new Random();
                 int randomNumber = random.Next(0, questions.Count);
                 question = questions[randomNumber];
                 questions.RemoveAt(randomNumber);
+
+
+
                 if (question.QType == QuestionType.QType.TrueFalse)
                 {
                     this.radioButton1.Visible = true;
                     this.radioButton2.Visible = true;
+                } else if(question.QType == QuestionType.QType.MissingWord || question.QType == QuestionType.QType.Multiple)
+                {
+                    this.textBox2.Visible = true;
+                    this.label3.Visible = true;
                 }
+
                 this.richTextBox1.Text = question.QuestionText;
             }
+        }
+
+        public void clearControl()
+        {
+            this.radioButton1.Visible = false;
+            this.radioButton2.Visible = false;
+            this.textBox1.Visible = false;
+            this.textBox2.Visible = false;
+            this.label2.Visible = false;
+            this.label3.Visible = false;
+            this.label1.Visible = false;
+            this.textBox1.Text = "";
+            this.textBox2.Text = "";
+            
         }
     }
 }

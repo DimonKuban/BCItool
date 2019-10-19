@@ -36,11 +36,13 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(143, 353);
+            this.button1.Location = new System.Drawing.Point(143, 364);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(156, 57);
             this.button1.TabIndex = 0;
@@ -68,7 +70,7 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(74, 228);
+            this.radioButton1.Location = new System.Drawing.Point(74, 218);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(66, 24);
             this.radioButton1.TabIndex = 4;
@@ -80,7 +82,7 @@
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(242, 228);
+            this.radioButton2.Location = new System.Drawing.Point(240, 218);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(73, 24);
             this.radioButton2.TabIndex = 5;
@@ -91,25 +93,25 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(157, 285);
+            this.textBox1.Location = new System.Drawing.Point(206, 306);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(606, 26);
+            this.textBox1.Size = new System.Drawing.Size(550, 26);
             this.textBox1.TabIndex = 6;
             this.textBox1.Visible = false;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(58, 288);
+            this.label2.Location = new System.Drawing.Point(58, 309);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 20);
+            this.label2.Size = new System.Drawing.Size(120, 20);
             this.label2.TabIndex = 7;
-            this.label2.Text = "Answer:";
+            this.label2.Text = "Correct answer:";
             this.label2.Visible = false;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(495, 353);
+            this.button3.Location = new System.Drawing.Point(495, 364);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(149, 57);
             this.button3.TabIndex = 9;
@@ -117,11 +119,31 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(206, 257);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(550, 26);
+            this.textBox2.TabIndex = 10;
+            this.textBox2.Visible = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(58, 260);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(66, 20);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "Answer:";
+            this.label3.Visible = false;
+            // 
             // TrueFalseQuestion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
@@ -148,5 +170,7 @@
         public System.Windows.Forms.TextBox textBox1;
         public System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox textBox2;
+        public System.Windows.Forms.Label label3;
     }
 }
