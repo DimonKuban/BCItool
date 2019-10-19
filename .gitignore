@@ -1,0 +1,17 @@
+App.config
+*.csproj
+*.sln
+*.xml
+*.ide-wal
+*.ide-shm
+*.ide
+*.lock
+*.config
+*.settings
+*.resx
+obj/Debug/BCItester.csproj.FileListAbsolute.txt
+*.resources
+*.md
+*.nupkg
+*.p7s
+*.CopyComplete
