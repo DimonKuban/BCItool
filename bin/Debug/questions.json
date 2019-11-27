@@ -153,6 +153,71 @@
     "QType": "MissingWord",
     "CorrectAnswer": "2",
     "QuestionText": "SQL warning number responsible for 'some of the values passed to a column function were null' - SQLWRN?"
+  },
+  {
+    "QType": "Multiple",
+    "CorrectAnswer": "IBM i",
+    "QuestionText": "To create a new connection what option you need to choose? (IBM I, Local)"
+  },
+  {
+    "QType": "MissingWord",
+    "CorrectAnswer": "Workspace",
+    "QuestionText": "Temporary versions of programming source code is stored in:"
+  },
+  {
+    "QType": "TrueFalse",
+    "CorrectAnswer": "True",
+    "QuestionText": "The attribute for Source Physical File is PF-SRC"
+  },
+  {
+    "QType": "TrueFalse",
+    "CorrectAnswer": "False",
+    "QuestionText": "If we add library to the library list with ADDLIBLE command it will appear there each time we connect"
+  },
+  {
+    "QType": "MissingWord",
+    "CorrectAnswer": "*pgm.rpgle",
+    "QuestionText": "What type is assigned to the RPGLE compiled program object?"
+  },
+  {
+    "QType": "MissingWord",
+    "CorrectAnswer": "RUNQRY *N FILENAME",
+    "QuestionText": "What command you need to write to view the data in the file after compilation? Do not go to spool file"
+  },
+  {
+    "QType": "MissingWord",
+    "CorrectAnswer": "Shift+Escape then 2",
+    "QuestionText": "You can escape from never end loop by sign in angain and calling WRKACTJOB and press 4'"
+  },
+  {
+    "QType": "MissingWord",
+    "CorrectAnswer": "0",
+    "QuestionText": "How many libraries you are allowed to create in your student library?"
+  },
+  {
+  "QType": "TrueFalse",
+  "CorrectAnswer": "False",
+  "QuestionText": "Student can run command CHGUSRPRF"
+  },
+  {
+  "QType": "MissingWord",
+  "CorrectAnswer": "*file.pf-dta",
+  "QuestionText": "Write file type where all data is located"
+  },
+  {
+  "QType": "MissingWord",
+  "CorrectAnswer": "*LAST",
+  "QuestionText": "What we need to include in command to display recent created spool file"
+  },
+  {
+  "QType": "MissingWord",
+  "CorrectAnswer": "Static",
+  "QuestionText": "What type of CALL is used when we have modules?"
+  },
+  {
+  "QType": "TrueFalse",
+  "CorrectAnswer": "False",
+  "QuestionText": "You don’t need to press F3 to go from Override"
   }
 
 ]
