@@ -19,6 +19,9 @@ namespace BCItester
         List<Question> questions = new List<Question>();
         List<int> showedQUestions = new List<int>();
         Question question;
+        public double correct = 0;
+        public double qQuantily = 0;
+
         public TrueFalseQuestion()
         {
             InitializeComponent();
@@ -66,7 +69,7 @@ namespace BCItester
                 string QuestionText = itemProperties.FirstOrDefault(x => x.Name == "QuestionText").Value.ToString();
                 questions.Add(new Question(qType, QuestionText, CorrectAnswer, counter++));
             }
-
+            qQuantily = data.Count;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -81,11 +84,13 @@ namespace BCItester
                 {
                     this.textBox1.Text = "Correct";
                     this.textBox1.ForeColor = Color.FromArgb(0, 255, 0);
+                    correct++;
                 }
                 else if(this.radioButton1.Checked == false && this.question.CorrectAnswer == "False")
                 {
                     this.textBox1.Text = "Correct";
                     this.textBox1.ForeColor = Color.FromArgb(0, 255, 0);
+                    correct++;
                 }
                 else
                 {
@@ -99,6 +104,7 @@ namespace BCItester
                 {
                     this.textBox1.Text = "Correct";
                     this.textBox1.ForeColor = Color.FromArgb(0, 255, 0);
+                    correct++;
                 }
                 else
                 {
@@ -116,8 +122,11 @@ namespace BCItester
             if (this.questions.Count == 0)
             {
                 this.textBox1.Visible = true;
-                this.textBox1.Text = "No more questions available";
+                this.textBox1.Text = "No more questions available. Correct answers: " + correct / qQuantily * 100 + "%" ;
+                this.correct = 0;
                 this.textBox1.ForeColor = Color.FromArgb(0, 0, 255);
+                this.button2.Visible = true;
+                this.richTextBox1.Text = "";
             }
             else
             {
@@ -154,7 +163,15 @@ namespace BCItester
             this.label1.Visible = false;
             this.textBox1.Text = "";
             this.textBox2.Text = "";
-            
+            this.button2.Visible = false;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.clearControl();
+            this.showedQUestions.Clear();
+            this.loadQuestions();
+            //this.correct = 0;
         }
     }
 }

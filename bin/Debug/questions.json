@@ -1,22 +1,158 @@
 [
+    //{
+    //  "QType": "TrueFalse",
+    //  "CorrectAnswer": true,
+    //  "QuestionText": "Why Manchester never wins champions league?"
+    //},
+    //{
+    //  "QType": "TrueFalse",
+    //  "CorrectAnswer": true,
+    //  "QuestionText": "when something happened"
+    //},
+    //{
+    //  "QType": "MissingWord",
+    //  "CorrectAnswer": "Zenit",
+    //  "QuestionText": "Best club"
+    //},
+    //{
+    //  "QType": "Multiple",
+    //  "CorrectAnswer": "Zenit",
+    //  "QuestionText": "Russian clubs (Zenit, Manchester, Borussia, Arsenal)"
+    //}
   {
-    "QType": "TrueFalse",
-    "CorrectAnswer": true,
-    "QuestionText": "Why Manchester never wins champions league?"
-  },
-  {
-    "QType": "TrueFalse",
-    "CorrectAnswer": true,
-    "QuestionText": "when something happened"
+    "QType": "Multiple",
+    "CorrectAnswer": "SQL compiler",
+    "QuestionText": "First pass the program does when running program with sql code is: (SQL compiler, RPGLE compiler)"
   },
   {
     "QType": "MissingWord",
-    "CorrectAnswer": "Zenit",
-    "QuestionText": "Best club"
+    "CorrectAnswer": "SQLRPGLE",
+    "QuestionText": "File type that contains sql statements"
   },
   {
-    "QType": "Multiple",
-    "CorrectAnswer": "Zenit",
-    "QuestionText": "Russian clubs (Zenit, Manchester, Borussia, Arsenal)"
+    "QType": "MissingWord",
+    "CorrectAnswer": "precompiler directives",
+    "QuestionText": "What is a EXEC SQL statement?"
+  },
+  {
+    "QType": "MissingWord",
+    "CorrectAnswer": "EXEC SQL",
+    "QuestionText": "Show precompiler directives syntax (starting sql statement)"
+  },
+  {
+    "QType": "MissingWord",
+    "CorrectAnswer": "2",
+    "QuestionText": "How many passes compiler does when running SQLRPGLE prorgam?"
+  },
+  {
+    "QType": "MissingWord",
+    "CorrectAnswer": ":CITY",
+    "QuestionText": "Syntax to destinguish <<column name>> and <<RPGLE variable>>? Write how you reference RPGLE variable CITY."
+  },
+  {
+    "QType": "MissingWord",
+    "CorrectAnswer": "HOST",
+    "QuestionText": "Another word for RPGLE variable is '??? variable'"
+  },
+  {
+    "QType": "MissingWord",
+    "CorrectAnswer": "data structure",
+    "QuestionText": "DCL-DS. What does DS stands for?"
+  },
+  {
+    "QType": "MissingWord",
+    "CorrectAnswer": "externally described file",
+    "QuestionText": "DCL-DS CUSTOMER EXT END-DS. Translate EXT"
+  },
+  {
+    "QType": "MissingWord",
+    "CorrectAnswer": "END-DS",
+    "QuestionText": "How to close DCL-DS statement?"
+  },
+  {
+    "QType": "TrueFalse",
+    "CorrectAnswer": false,
+    "QuestionText": "You can put NULL into RPGLE variable"
+  },
+  {
+    "QType": "MissingWord",
+    "CorrectAnswer": "INDICATOR",
+    "QuestionText": "A variable name that allowes dealing with NULL in RPGLE called '??? variables'"
+  },
+  {
+    "QType": "MissingWord",
+    "CorrectAnswer": "DCL-S",
+    "QuestionText": "Syntax for declaring stand-alone field"
+  },
+  {
+    "QType": "MissingWord",
+    "CorrectAnswer": "BinDec",
+    "QuestionText": "Stand-along field of which data type do you declare to store NULL variable? (type datatype) (DCL-S CsCityNull ???(4:0))"
+  },
+  {
+    "QType": "MissingWord",
+    "CorrectAnswer": "-1",
+    "QuestionText": "If indicator variable got NULL, what value it will set?"
+  },
+  {
+    "QType": "MissingWord",
+    "CorrectAnswer": "communications",
+    "QuestionText": "After every embedded SQL statement, you need to <<check SQL ...s area >>"
+  },
+  {
+    "QType": "MissingWord",
+    "CorrectAnswer": "<0",
+    "QuestionText": "SQL communication area reported SERIOUS ERROR. Which code did it return?"
+  },
+  {
+    "QType": "TrueFalse",
+    "CorrectAnswer": true,
+    "QuestionText": "Do we get a variable in communications area that report an error automatically?"
+  },
+  {
+    "QType": "MissingWord",
+    "CorrectAnswer": "0",
+    "QuestionText": "SQL communication area reported succesfull execution (but might have a warning). Which code did it return?"
+  },
+  {
+    "QType": "MissingWord",
+    "CorrectAnswer": ">0",
+    "QuestionText": "SQL communication area reported succesfull execution (diffinitely have a warning). Which code did it return?"
+  },
+  {
+    "QType": "MissingWord",
+    "CorrectAnswer": "0",
+    "QuestionText": "SQL communication area reported succesfull execution. Which code did it return?"
+  },
+  {
+    "QType": "MissingWord",
+    "CorrectAnswer": "100",
+    "QuestionText": "SQL communication area reported 'row not found'. Which code did it return?"
+  },
+  {
+    "QType": "TrueFalse",
+    "CorrectAnswer": true,
+    "QuestionText": "SQLWRN0 set to 'W' if any other SQLWRN1- SQLWNA set to 'W'"
+  },
+  {
+    "QType": "MissingWord",
+    "CorrectAnswer": "SQLWRN0",
+    "QuestionText": "Wariable name in SQL communications area responsible for Warnings?"
+  },
+  {
+    "QType": "MissingWord",
+    "CorrectAnswer": "SQLCODE",
+    "QuestionText": "Wariable name in SQL communications area responsible for execution status?"
+  },
+  {
+    "QType": "MissingWord",
+    "CorrectAnswer": "10",
+    "QuestionText": "How many warnings exist in SQL communications area? (SQLWN*)"
+  },
+  {
+    "QType": "MissingWord",
+    "CorrectAnswer": "2",
+    "QuestionText": "SQL warning number responsible for 'some of the values passed to a column function were null' - SQLWRN?"
   }
+
 ]
